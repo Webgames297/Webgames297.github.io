@@ -8,7 +8,7 @@ let favSet=new Set();
 try{
 const saved=localStorage.getItem('webgames297_favs');
 if(saved)favSet=new Set(JSON.parse(saved));
-}catch(e){favSet=new Set();}
+}catch(e){}
 
 games.forEach(g=>{
 const title=g.dataset.title;
@@ -20,11 +20,10 @@ favBtn.classList.add('fav');
 });
 
 function saveFavs(){
-try{localStorage.setItem('webgames297_favs',JSON.stringify([...favSet]));}catch(e){}
+localStorage.setItem('webgames297_favs',JSON.stringify([...favSet]));
 }
 
-function applyThemeFromStorage(){
-try{
+function applyTheme(){
 const t=localStorage.getItem('webgames297_theme');
 if(t==='dark'){
 document.body.classList.add('dark');
@@ -33,13 +32,12 @@ themeToggle.textContent='Light mode';
 document.body.classList.remove('dark');
 themeToggle.textContent='Dark mode';
 }
-}catch(e){}
 }
-applyThemeFromStorage();
+applyTheme();
 
 themeToggle.addEventListener('click',()=>{
 const isDark=document.body.classList.toggle('dark');
-try{localStorage.setItem('webgames297_theme',isDark?'dark':'light');}catch(e){}
+localStorage.setItem('webgames297_theme',isDark?'dark':'light');
 themeToggle.textContent=isDark?'Light mode':'Dark mode';
 });
 
@@ -49,7 +47,7 @@ const active=document.querySelector('.sidebar a.active');
 const genre=active?active.dataset.genre:'all';
 games.forEach(g=>{
 const title=g.dataset.title.toLowerCase();
-const gen=(g.dataset.genre||'').toLowerCase();
+const gen=g.dataset.genre.toLowerCase();
 const isFav=g.dataset.favorite==='1';
 const isNew=g.dataset.new==='1';
 let okGenre=false;
@@ -58,7 +56,7 @@ else if(genre==='favorites') okGenre=isFav;
 else if(genre==='new') okGenre=isNew;
 else okGenre=gen.includes(genre);
 const okTitle=title.includes(q);
-g.style.display=okGenre&&okTitle?'block':'none';
+g.style.display=okTitle&&okGenre?'block':'none';
 });
 }
 
@@ -73,7 +71,7 @@ filter();
 
 games.forEach(game=>{
 const favBtn=game.querySelector('.fav-btn');
-const title = game.dataset.title;
+const title=game.dataset.title;
 favBtn.addEventListener('click',e=>{
 e.stopPropagation();
 if(game.dataset.favorite==='1'){
@@ -86,6 +84,7 @@ favBtn.classList.add('fav');
 favSet.add(title);
 }
 saveFavs();
+filter();
 });
 });
 
@@ -93,29 +92,31 @@ games.forEach(game=>{
 const iframe=game.querySelector('iframe');
 const src=game.dataset.src;
 const loader=game.querySelector('.loader');
-iframe.setAttribute('data-loaded','0');
+iframe.dataset.loaded='0';
+
 game.addEventListener('click',e=>{
-if(e.target.classList.contains('fullscreen-btn')||e.target.classList.contains('fav-btn'))return;
-if(iframe.getAttribute('data-loaded')==='0'){
-if(loader)loader.style.display='block';
+if(e.target.classList.contains('fullscreen-btn'))return;
+if(e.target.classList.contains('fav-btn'))return;
+if(iframe.dataset.loaded==='0'){
+loader.style.display='block';
 iframe.src=src;
-iframe.setAttribute('data-loaded','1');
+iframe.dataset.loaded='1';
 }
 });
+
 iframe.addEventListener('load',()=>{
-if(loader && iframe.src) loader.style.display='none';
+loader.style.display='none';
 });
 });
 
 const observer=new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
-const game=entry.target;
-const iframe=game.querySelector('iframe');
-const loader=game.querySelector('.loader');
+const iframe=entry.target.querySelector('iframe');
+const loader=entry.target.querySelector('.loader');
 if(!entry.isIntersecting){
 iframe.src='';
-iframe.setAttribute('data-loaded','0');
-if(loader)loader.style.display='none';
+iframe.dataset.loaded='0';
+loader.style.display='none';
 }
 });
 },{threshold:0});
@@ -135,6 +136,7 @@ else if(iframe.msRequestFullscreen)iframe.msRequestFullscreen();
 });
 });
 
-if(genres.length>0)genres[0].classList.add('active');
+genres[0].classList.add('active');
 filter();
 });
+
