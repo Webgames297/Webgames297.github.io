@@ -12,270 +12,415 @@
 </head>
 <body>
 <header class="fixed-header">
-<h1>webgames297</h1>
-<div class="header-right">
-<button id="themeToggle">Dark mode</button>
-</div>
-<input type="text" id="searchBar" placeholder="Search games...">
+  <h1>webgames297</h1>
+  <div class="header-right">
+    <button id="themeToggle">Dark mode</button>
+  </div>
+  <input type="text" id="searchBar" placeholder="Search games...">
 </header>
 
 <aside class="sidebar">
-<h2>Genres</h2>
-<ul>
-<li><a href="#" data-genre="all">Show All</a></li>
-<li><a href="#" data-genre="favorites">Favorites</a></li>
-<li><a href="#" data-genre="new">New Games</a></li>
-<li><a href="#" data-genre="cars">Cars</a></li>
-<li><a href="#" data-genre="motorbikes">Motorbikes</a></li>
-<li><a href="#" data-genre="fighting">Fighting</a></li>
-<li><a href="#" data-genre="shooting">Shooting</a></li>
-<li><a href="#" data-genre="planes">Planes</a></li>
-<li><a href="#" data-genre="winter">Winter</a></li>
-<li><a href="#" data-genre="clicker">Clicker</a></li>
-<li><a href="#" data-genre="adventure">Adventure</a></li>
-<li><a href="#" data-genre="endless runner">Endless Runner</a></li>
-</ul>
+  <h2>Genres</h2>
+  <ul>
+    <li><a href="#" data-genre="all">Show All</a></li>
+    <li><a href="#" data-genre="favorites">Favorites</a></li>
+    <li><a href="#" data-genre="new">New Games</a></li>
+    <li><a href="#" data-genre="cars">Cars</a></li>
+    <li><a href="#" data-genre="motorbikes">Motorbikes</a></li>
+    <li><a href="#" data-genre="fighting">Fighting</a></li>
+    <li><a href="#" data-genre="shooting">Shooting</a></li>
+    <li><a href="#" data-genre="planes">Planes</a></li>
+    <li><a href="#" data-genre="winter">Winter</a></li>
+    <li><a href="#" data-genre="clicker">Clicker</a></li>
+    <li><a href="#" data-genre="adventure">Adventure</a></li>
+    <li><a href="#" data-genre="endless runner">Endless Runner</a></li>
+  </ul>
 </aside>
 
 <main class="content">
-<div class="games" id="gamesList">
+  <div class="games" id="gamesList">
 
-<div class="game" data-title="Drive Mad" data-src="https://azgames.io/drive-mad.embed" data-genre="cars" data-new="0" data-favorite="0">
-<img class="game-thumb" src="https://via.placeholder.com/350x200?text=Drive+Mad" alt="Drive Mad thumbnail">
-<div class="game-header-row">
-<div class="game-title">Drive Mad</div>
-<button class="fav-btn" title="Toggle favorite">★</button>
-</div>
-<button class="fullscreen-btn">Fullscreen</button>
-<div class="loader">Loading...</div>
-<iframe allowfullscreen></iframe>
-</div>
-<div class="game" data-title="Drive Mad" data-src="https://azgames.io/drive-mad.embed" data-genre="cars" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Drive+Mad">
-  <div class="game-header-row">
-    <div class="game-title">Drive Mad</div>
-    <button class="fav-btn">★</button>
+    <div class="game" data-title="Drive Mad" data-src="https://azgames.io/drive-mad.embed" data-genre="cars" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Drive+Mad" alt="Drive Mad thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Drive Mad</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Ragdoll Hit Stickman" data-src="https://game.azgame.io/ragdoll-hit-stickman/" data-genre="fighting" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Ragdoll+Hit+Stickman" alt="Ragdoll Hit Stickman thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Ragdoll Hit Stickman</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Rocket Fortress" data-src="https://gamea.azgame.io/rocket-fortress/" data-genre="shooting" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Rocket+Fortress" alt="Rocket Fortress thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Rocket Fortress</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Moto X3M" data-src="https://azgames.io/moto-x3m.embed" data-genre="motorbikes" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Moto+X3M" alt="Moto X3M thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Moto X3M</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Subway Surfers" data-src="https://azgames.io/subway-surfers.embed" data-genre="endless runner" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Subway+Surfers" alt="Subway Surfers thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Subway Surfers</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Stickman Empires" data-src="https://gamea.azgame.io/stickman-empires/" data-genre="fighting" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Stickman+Empires" alt="Stickman Empires thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Stickman Empires</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Slope 2" data-src="https://game.azgame.io/slope-2/" data-genre="endless runner" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Slope+2" alt="Slope 2 thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Slope 2</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Geometry Dash" data-src="https://azgames.io/geometry-dash.embed" data-genre="endless runner" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Geometry+Dash" alt="Geometry Dash thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Geometry Dash</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Snake Arena" data-src="https://game.azgame.io/snake-arena/" data-genre="adventure" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Snake+Arena" alt="Snake Arena thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Snake Arena</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Undyne the Undying Fight UT" data-src="https://turbowarp.org/669974432/embed" data-genre="fighting" data-new="1" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Undyne+Undying" alt="Undyne the Undying Fight UT thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Undyne the Undying Fight UT</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Escape Road City 2" data-src="https://game.azgame.io/escape-road-city-2/" data-genre="adventure cars shooting" data-new="1" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Escape+Road+City+2" alt="Escape Road City 2 thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Escape Road City 2</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Asriel Dreemurr Fight UT" data-src="https://turbowarp.org/614610315/embed" data-genre="fighting" data-new="1" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Asriel+Dreemurr" alt="Asriel Dreemurr Fight UT thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Asriel Dreemurr Fight UT</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Wing Smash" data-src="https://game.azgame.io/wing-smash/" data-genre="planes" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Wing+Smash" alt="Wing Smash thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Wing Smash</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Drift Boss" data-src="https://azgames.io/drift-boss.embed" data-genre="cars" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Drift+Boss" alt="Drift Boss thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Drift Boss</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Snowtrail Legends" data-src="https://game.azgame.io/snowtrail-legends/" data-genre="winter" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Snowtrail+Legends" alt="Snowtrail Legends thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Snowtrail Legends</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Cowboy Safari" data-src="https://gamea.azgame.io/cowboy-safari/" data-genre="adventure" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Cowboy+Safari" alt="Cowboy Safari thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Cowboy Safari</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Cookie Clicker" data-src="https://azgames.io/cookie-clicker.embed" data-genre="clicker" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Cookie+Clicker" alt="Cookie Clicker thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Cookie Clicker</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Ramp Xtreme" data-src="https://gamea.azgame.io/ramp-xtreme/" data-genre="motorbikes" data-new="0" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Ramp+Xtreme" alt="Ramp Xtreme thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Ramp Xtreme</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="Eaglercraft 1.12.2" data-src="https://eaglercraft.com/play/?version=1.12.2-wasm" data-genre="adventure" data-new="1" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Eaglercraft+1.12.2" alt="Eaglercraft 1.12.2 thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">Eaglercraft 1.12.2</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
+    <div class="game" data-title="New TurboWarp Game" data-src="https://turbowarp.org/671171726/embed" data-genre="fighting adventure" data-new="1" data-favorite="0">
+      <div class="thumb-wrapper">
+        <img class="game-thumb" src="https://via.placeholder.com/350x200?text=New+TurboWarp+Game" alt="New TurboWarp Game thumbnail">
+        <div class="play-overlay">
+          <div class="play-button">
+            <span class="play-icon">&#9658;</span>
+            <span class="play-text">Play</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-header-row">
+        <div class="game-title">New TurboWarp Game</div>
+        <button class="fav-btn" title="Favorite">★</button>
+      </div>
+      <button class="fullscreen-btn">Fullscreen</button>
+      <div class="loader">Loading...</div>
+      <iframe allowfullscreen></iframe>
+    </div>
+
   </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Ragdoll Hit Stickman" data-src="https://game.azgame.io/ragdoll-hit-stickman/" data-genre="fighting" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Ragdoll+Hit+Stickman">
-  <div class="game-header-row">
-    <div class="game-title">Ragdoll Hit Stickman</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Rocket Fortress" data-src="https://gamea.azgame.io/rocket-fortress/" data-genre="shooting" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Rocket+Fortress">
-  <div class="game-header-row">
-    <div class="game-title">Rocket Fortress</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Moto X3M" data-src="https://azgames.io/moto-x3m.embed" data-genre="motorbikes" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Moto+X3M">
-  <div class="game-header-row">
-    <div class="game-title">Moto X3M</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Subway Surfers" data-src="https://azgames.io/subway-surfers.embed" data-genre="endless runner" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Subway+Surfers">
-  <div class="game-header-row">
-    <div class="game-title">Subway Surfers</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Stickman Empires" data-src="https://gamea.azgame.io/stickman-empires/" data-genre="fighting" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Stickman+Empires">
-  <div class="game-header-row">
-    <div class="game-title">Stickman Empires</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Slope 2" data-src="https://game.azgame.io/slope-2/" data-genre="endless runner" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Slope+2">
-  <div class="game-header-row">
-    <div class="game-title">Slope 2</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Geometry Dash" data-src="https://azgames.io/geometry-dash.embed" data-genre="endless runner" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Geometry+Dash">
-  <div class="game-header-row">
-    <div class="game-title">Geometry Dash</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Snake Arena" data-src="https://game.azgame.io/snake-arena/" data-genre="adventure" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Snake+Arena">
-  <div class="game-header-row">
-    <div class="game-title">Snake Arena</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Undyne the Undying Fight UT" data-src="https://turbowarp.org/669974432/embed" data-genre="fighting" data-new="1" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Undyne+Undying">
-  <div class="game-header-row">
-    <div class="game-title">Undyne the Undying Fight UT</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Escape Road City 2" data-src="https://game.azgame.io/escape-road-city-2/" data-genre="adventure cars shooting" data-new="1" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Escape+Road+City+2">
-  <div class="game-header-row">
-    <div class="game-title">Escape Road City 2</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Asriel Dreemurr Fight UT" data-src="https://turbowarp.org/614610315/embed" data-genre="fighting" data-new="1" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Asriel+Dreemurr">
-  <div class="game-header-row">
-    <div class="game-title">Asriel Dreemurr Fight UT</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Wing Smash" data-src="https://game.azgame.io/wing-smash/" data-genre="planes" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Wing+Smash">
-  <div class="game-header-row">
-    <div class="game-title">Wing Smash</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Drift Boss" data-src="https://azgames.io/drift-boss.embed" data-genre="cars" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Drift+Boss">
-  <div class="game-header-row">
-    <div class="game-title">Drift Boss</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Snowtrail Legends" data-src="https://game.azgame.io/snowtrail-legends/" data-genre="winter" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Snowtrail+Legends">
-  <div class="game-header-row">
-    <div class="game-title">Snowtrail Legends</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Cowboy Safari" data-src="https://gamea.azgame.io/cowboy-safari/" data-genre="adventure" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Cowboy+Safari">
-  <div class="game-header-row">
-    <div class="game-title">Cowboy Safari</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Cookie Clicker" data-src="https://azgames.io/cookie-clicker.embed" data-genre="clicker" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Cookie+Clicker">
-  <div class="game-header-row">
-    <div class="game-title">Cookie Clicker</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Ramp Xtreme" data-src="https://gamea.azgame.io/ramp-xtreme/" data-genre="motorbikes" data-new="0" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Ramp+Xtreme">
-  <div class="game-header-row">
-    <div class="game-title">Ramp Xtreme</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="Eaglercraft 1.12.2" data-src="https://eaglercraft.com/play/?version=1.12.2-wasm" data-genre="adventure" data-new="1" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=Eaglercraft+1.12.2">
-  <div class="game-header-row">
-    <div class="game-title">Eaglercraft 1.12.2</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<div class="game" data-title="New TurboWarp Game" data-src="https://turbowarp.org/671171726/embed" data-genre="fighting adventure" data-new="1" data-favorite="0">
-  <img class="game-thumb" src="https://via.placeholder.com/350x200?text=New+TurboWarp+Game">
-  <div class="game-header-row">
-    <div class="game-title">New TurboWarp Game</div>
-    <button class="fav-btn">★</button>
-  </div>
-  <button class="fullscreen-btn">Fullscreen</button>
-  <div class="loader">Loading...</div>
-  <iframe allowfullscreen></iframe>
-</div>
-
-<button class="fullscreen-btn">Fullscreen</button>
-<div class="loader">Loading...</div>
-<iframe allowfullscreen></iframe>
-</div>
-
-</div>
 </main>
 
 <script src="js/script.js"></script>
