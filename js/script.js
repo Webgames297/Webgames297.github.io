@@ -1,4 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
+  async function makePreviewFrame(url, img) {
+    return new Promise(resolve => {
+        const temp = document.createElement('iframe');
+        temp.src = url;
+        temp.style.position = 'absolute';
+        temp.style.left = '-9999px';
+        temp.style.top = '-9999px';
+        temp.width = 800;
+        temp.height = 600;
+        document.body.appendChild(temp);
+
+        let done = false;
+
+        temp.onload = async () => {
+            setTimeout(async () => {
+                try {
+                    const canvas = await html2canvas(temp.contentWindow.document.body, {
+                        useCORS: true,
+                        backgroundColor: null
+                    });
+                    img.src = canvas.toDataURL("image/png");
+                } catch (e) {
+                    img.src = img.dataset.fallback;
+                }
+                if (!done) {
+                    done = true;
+                    temp.remove();
+                    resolve();
+                }
+            }, 700);
+        };
+
+        setTimeout(() => {
+            if (!done) {
+                done = true;
+                img.src = img.dataset.fallback;
+                temp.remove();
+                resolve();
+            }
+        }, 1500);
+    });
+}
+
 const search = document.getElementById('searchBar');
 const games = [...document.querySelectorAll('.game')];
 const genres = [...document.querySelectorAll('.sidebar a')];
